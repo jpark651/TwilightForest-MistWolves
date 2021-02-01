@@ -1,22 +1,23 @@
-Twilight Forest [![Discord](https://img.shields.io/discord/313006291012288521.svg?colorB=7289DA&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAABWAgMAAABnZYq0AAAACVBMVEUAAB38%2FPz%2F%2F%2F%2Bm8P%2F9AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhBxwQJhxy2iqrAAABoElEQVRIx7WWzdGEIAyGgcMeKMESrMJ6rILZCiiBg4eYKr%2Fd1ZAfgXFm98sJfAyGNwno3G9sLucgYGpQ4OGVRxQTREMDZjF7ILSWjoiHo1n%2BE03Aw8p7CNY5IhkYd%2F%2F6MtO3f8BNhR1QWnarCH4tr6myl0cWgUVNcfMcXACP1hKrGMt8wcAyxide7Ymcgqale7hN6846uJCkQxw6GG7h2MH4Czz3cLqD1zHu0VOXMfZjHLoYvsdd0Q7ZvsOkafJ1P4QXxrWFd14wMc60h8JKCbyQvImzlFjyGoZTKzohwWR2UzSONHhYXBQOaKKsySsahwGGDnb%2FiYPJw22sCqzirSULYy1qtHhXGbtgrM0oagBV4XiTJok3GoLoDNH8ooTmBm7ZMsbpFzi2bgPGoXWXME6XT%2BRJ4GLddxJ4PpQy7tmfoU2HPN6cKg%2BledKHBKlF8oNSt5w5g5o8eXhu1IOlpl5kGerDxIVT%2BztzKepulD8utXqpChamkzzuo7xYGk%2FkpSYuviLXun5bzdRf0Krejzqyz7Z3p0I1v2d6HmA07dofmS48njAiuMgAAAAASUVORK5CYII%3D)](https://discord.gg/6v3z26B) [![Curseforge](http://cf.way2muchnoise.eu/full_the-twilight-forest_downloads.svg)](https://minecraft.curseforge.com/projects/the-twilight-forest) [![Curseforge](http://cf.way2muchnoise.eu/versions/For%20MC_the-twilight-forest_all.svg)](https://minecraft.curseforge.com/projects/the-twilight-forest)
+Twilight Forest - 1.12.2 - Mist Wolf Edition
 ==============
 
-This is the home of the Twilight Forest mod for Minecraft 1.12 and beyond.
+This is a modified version of the 1.12.2 Twilight Forest build, which is a branch that no longer accepts new features.
 
-## Downloads
-Releases will be available on [CurseForge](https://minecraft.curseforge.com/projects/the-twilight-forest) when ready.
+The original version can be found at the [Twilight Forest GitHub](https://github.com/TeamTwilight/twilightforest/tree/1.12.x).
 
-Alternatively, grab your experimental builds from our [Discord](https://discord.gg/6v3z26B). See the #faq channel for more details.
+## New Features
+- **Mist Wolf Taming** - Mist wolves can now be tamed. This requires the player to hold a scepter in their off-hand while having the bones in their main hand. The mist wolf will only accept the bones when it doesn't have an attack target, which will most likely require the player to build a taming enclosure of some kind. Note that successfully taming a mist wolf requires significantly more bones than a normal wolf.
 
-## Community
-We have a [Discord channel](https://discord.gg/6v3z26B)!
+- **Intelligent Teleporting** - The increased size of the mist wolf required more intelligent teleportation when following the player, to prevent the mist wolf from suffocating in blocks or going long periods of time without being able to teleport. One example of this improvement is the mist wolf's ability to teleport into space occupied by grass, flowers, and torches, whereas a normal wolf cannot.
 
-## YourKit
-![](https://www.yourkit.com/images/yklogo.png)
+- **New Behavioral Mode** - When a mist wolf is tamed, the owner can issue them an order to guard the area, causing the mist wolf to wander the area they're in and making them hostile to other players. This mode can be started while sneaking by right-clicking the mist wolf with an empty hand. This mode can be ended by making the mist wolf sit.
 
-We appreciate YourKit, LLC for providing the project developers licenses of its profiler to help us improve performance! 
+- **Peaceful Mist Wolves** - Updated mist wolves to remain present in peaceful worlds, to stay consistent with other tameable animals. When untamed, they follow players around peacefully.
 
-YourKit supports open source projects with its full-featured Java Profiler.
-YourKit, LLC is the creator of [YourKit Java Profiler](https://www.yourkit.com/java/profiler/)
-and [YourKit .NET Profiler](https://www.yourkit.com/.net/profiler/),
-innovative and intelligent tools for profiling Java and .NET applications.
+- **Growth Teleport Fixed** - Vanilla Minecraft had a bug in 1.12 which causes sitting baby wolves to teleport to their owner when they become an adult. This carried over to mist wolves, but has been fixed.
+
+- **Stat Updates** - When tamed, a mist wolf's health and attack are reduced to that of a normal tamed wolf. Additionally, vanilla Minecraft would not change the current health of wolves when adjusting their max health, which would cause them to whine (because they were below half health). This has been fixed for mist wolves.
+
+- **Better Interactions** - Various ways of interacting with mist wolves have been improved. As an example, attempting to feed mist wolves meat will not cause them to sit, even when the wolf won't accept meat. These changes are aimed at keeping mist wolves in their desired behavioral state, so common actions won't accidentally modify their behavior.
+
+- **Mist Wolf Self-Defense** - When another player attempts to do something that would directly affect your mist wolf, such as renaming them with a name tag, dyeing their collar, or putting them in love mode, the mist wolf will growl at them, preventing the action from being performed.
