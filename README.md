@@ -6,7 +6,7 @@ This is a modified version of the 1.12.2 Twilight Forest build, which is a branc
 The original version can be found at the [Twilight Forest GitHub](https://github.com/TeamTwilight/twilightforest/tree/1.12.x).
 
 ## New Features
-- **Mist Wolf Taming** - Mist wolves can now be tamed. This requires the player to hold a scepter in their off-hand while having the bones in their main hand. The mist wolf will only accept the bones when it doesn't have an attack target, which will most likely require the player to build a taming enclosure of some kind. Note that successfully taming a mist wolf requires significantly more bones than a normal wolf.
+- **Mist Wolf Taming** - Mist wolves can now be tamed. This requires the player to hold a scepter in their off-hand while having bones held in their main hand. The mist wolf will only accept the bones when it doesn't have an attack target, which will most likely require the player to build a taming enclosure. Note that successfully taming a mist wolf requires significantly more bones than it would with a normal wolf.
 
 - **Intelligent Teleporting** - The increased size of the mist wolf required more intelligent teleportation when following the player, to prevent the mist wolf from suffocating in blocks or going long periods of time without being able to teleport. One example of this improvement is the mist wolf's ability to teleport into space occupied by grass, flowers, and torches, whereas a normal wolf cannot.
 
