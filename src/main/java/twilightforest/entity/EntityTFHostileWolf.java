@@ -6,6 +6,7 @@ import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
@@ -53,7 +54,7 @@ public class EntityTFHostileWolf extends EntityWolf implements IMob {
 	@Override
 	public void onUpdate() {
 		super.onUpdate();
-		if (!world.isRemote && world.getDifficulty() == EnumDifficulty.PEACEFUL) {
+		if (!world.isRemote && world.getDifficulty() == EnumDifficulty.PEACEFUL && !(this instanceof EntityTFMistWolf)) {
 			setDead();
 		}
 	}
@@ -87,7 +88,7 @@ public class EntityTFHostileWolf extends EntityWolf implements IMob {
 
 			return i <= this.rand.nextInt(8);
 		}
-	}
+	}	
 
 	@Override
 	public void setAttackTarget(@Nullable EntityLivingBase entity) {
@@ -113,10 +114,17 @@ public class EntityTFHostileWolf extends EntityWolf implements IMob {
 
 	@Override
 	public boolean processInteract(EntityPlayer player, EnumHand hand) {
-		return false;
+		if (player.getHeldItem(hand).getItem() == Items.BONE)
+		{
+			return false;
+		}
+		else
+		{
+			return this instanceof EntityTFMistWolf ? super.processInteract(player, hand) : false;
+		}
 	}
 
-	@Override
+	@Override	
 	protected ResourceLocation getLootTable() {
 		return LOOT_TABLE;
 	}
