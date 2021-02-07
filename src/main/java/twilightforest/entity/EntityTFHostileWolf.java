@@ -3,7 +3,6 @@ package twilightforest.entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
-import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -24,7 +23,7 @@ import twilightforest.TwilightForestMod;
 
 import javax.annotation.Nullable;
 
-public class EntityTFHostileWolf extends EntityWolf implements IMob {
+public class EntityTFHostileWolf extends EntityWolf {
 	public static final ResourceLocation LOOT_TABLE = TwilightForestMod.prefix("entities/hostile_wolf");
 
 	public EntityTFHostileWolf(World world) {
